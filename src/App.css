@@ -46,9 +46,14 @@
 }
 
 .details-page-container {
-  margin-top: 20px;
+  margin: 30px;
 }
 
 .details-page-card {
   margin-top: 20px;
+  padding: 20px;
+}
+
+.detail-card-text {
+  padding: 5px;
 }

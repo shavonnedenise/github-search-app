@@ -1,25 +1,30 @@
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
 
 const RepoDetail = ({ repo }) => {
      return (
           <section>
                <div>
                     <div>
-                         <h3>
+                         <Typography>
+                         <h1 className="detail-card-text">
                               <strong>Title:</strong> {repo.name}
-                         </h3>
-                         <p>
+                         </h1>
+                         </Typography>
+                         <Typography>
+                         <h5 className="detail-card-text">
                               <strong>Owner Login Name:</strong> {repo.owner.login}
-                         </p>
-                         <p>
+                         </h5>
+                         <h5 className="detail-card-text">
                               <strong>Repo Description:</strong> {repo.description}
-                         </p>
-                         <p>
+                         </h5>
+                         <h5 className="detail-card-text">
                               <strong>Stargazers Count:</strong> {repo.stargazers_count}
-                         </p>
-                         <p>
+                         </h5>
+                         <h5 className="detail-card-text">
                               <strong>Language:</strong> {repo.language}
-                         </p>
+                         </h5>
+                         </Typography>
                     </div>
                </div>
           </section>
