@@ -45,7 +45,7 @@
   margin: 50px 10px;
 }
 
-.details-page-container {
+.details-page-container, .error-page-container {
   margin: 30px;
 }
 
@@ -62,4 +62,8 @@
   margin: 10px;
   color: palevioletred;
   font-size: 20px;
+}
+
+.error-card-text {
+  padding: 5px;
 }
