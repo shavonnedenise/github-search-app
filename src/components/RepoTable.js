@@ -1,5 +1,10 @@
 import React from "react"
 import { useTable, useSortBy, useFilters } from "react-table"
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
 
 import {Filter, DefaultColumnFilter} from './Filters';
 
@@ -24,38 +29,44 @@ const RepoTable = ({ columns, data }) => {
      }
 
      return (
-          <table {...getTableProps()}>
-               <thead>
+          <Table {...getTableProps()}>
+               <colgroup>
+                    <col style={{width:'25%'}}/>
+                    <col style={{width:'25%'}}/>
+                    <col style={{width:'25%'}}/>
+                    <col style={{width:'25%'}}/>
+               </colgroup>
+               <TableHead>
                     {headerGroups.map(headerGroup => (
-                         <tr {...headerGroup.getHeaderGroupProps()}>
+                         <TableRow {...headerGroup.getHeaderGroupProps()}>
                               {headerGroup.headers.map(column => (
-                                   <td {...column.getHeaderProps()} align="center">
+                                   <TableCell {...column.getHeaderProps()} align="center">
                                         <div {...column.getSortByToggleProps()}>
                                              {column.render("Header")}
                                              {generateSortingIndicator(column)}
                                         </div>
                                         <Filter column={column} />
-                                   </td>
+                                   </TableCell>
                               ))}
-                         </tr>
+                         </TableRow>
                     ))}
-               </thead>
+               </TableHead>
 
-               <tbody {...getTableBodyProps()}>
+               <TableBody {...getTableBodyProps()}>
                     {rows.map(row => {
                          prepareRow(row)
                          return (
-                              <tr {...row.getRowProps()}>
+                              <TableRow {...row.getRowProps()}>
                                    {row.cells.map(cell => {
-                                        return <td {...cell.getCellProps()}>
+                                        return <TableCell {...cell.getCellProps()}>
                                              {cell.render("Cell")}
-                                        </td>
+                                        </TableCell>
                                    })}
-                              </tr>
+                              </TableRow>
                          )
                     })}
-               </tbody>
-          </table>
+               </TableBody>
+          </Table>
      )
 }
 

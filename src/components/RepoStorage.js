@@ -9,7 +9,7 @@ const RepoStorage = ({ repos }) => {
      const columns = useMemo(
           () => [
                {
-                    Header: "Repository ID",
+                    Header: "ID",
                     accessor: "id",
                     Cell: (repos) => {
                          return (
@@ -20,19 +20,19 @@ const RepoStorage = ({ repos }) => {
                     filter: 'equals'
                },
                {
-                    Header: "Repository Name",
+                    Header: "Name",
                     accessor: "name",
                     Filter: SelectColumnFilter,
                     filter: 'equals'
                },
                {
-                    Header: "Repository Description",
+                    Header: "Description",
                     accessor: "description",
                     Filter: SelectColumnFilter,
                     filter: 'equals'
                     },
                {
-                    Header: "Repository Language",
+                    Header: "Language",
                     accessor: "language",
                     Filter: SelectColumnFilter,
                     filter: 'equals'
