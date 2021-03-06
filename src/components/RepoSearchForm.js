@@ -22,7 +22,14 @@ const RepoSearchForm = ({
                     onChange={onInputChange}
                     required
                />
-               <Button type="submit">Search</Button>
+               <Button 
+                    type="submit" 
+                    variant="contained"
+                    color="primary"
+                    size="large"
+               >
+                    Search
+               </Button>
                {error && (
                     <div style={{ color: `red` }}>
                          <p>Uh oh! An error occurred while trying to fetch from the API!</p>
