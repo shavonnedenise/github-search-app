@@ -17,7 +17,7 @@ const RepoSearchForm = ({
                          <TextField 
                               id="outlined-textarea"
                               label="Search me for repos"
-                              placeholder="Kitty cats, Java, JS, etc!"
+                              placeholder="kitty cats, Java, JS, etc!"
                               variant="outlined"
                               margin="dense"
                               value={searchTerm}

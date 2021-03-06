@@ -57,3 +57,9 @@
 .detail-card-text {
   padding: 5px;
 }
+
+.loading-text {
+  margin: 10px;
+  color: palevioletred;
+  font-size: 20px;
+}

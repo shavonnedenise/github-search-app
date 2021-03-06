@@ -1,13 +1,16 @@
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
 
 const Loader = ({ loading, searchTerm }) => {
      return (
-          <>
+          <>  
+               <Typography align="center">
                {loading && (
-                    <div style={{ color: `green` }} className="text-center">
-                         Hiya! Please wait while we fetch those repos for "<strong>{searchTerm}</strong>"
+                    <div className="loading-text">
+                         Howdy! Please wait while we fetch those repos with "<strong>{searchTerm}</strong>"
                     </div>
                )}
+               </Typography>
           </>
      );
 };

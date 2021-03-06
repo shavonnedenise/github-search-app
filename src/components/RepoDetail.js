@@ -10,8 +10,6 @@ const RepoDetail = ({ repo }) => {
                          <h1 className="detail-card-text">
                               <strong>Title:</strong> {repo.name}
                          </h1>
-                         </Typography>
-                         <Typography>
                          <h5 className="detail-card-text">
                               <strong>Owner:</strong> {repo.owner.login}
                          </h5>
