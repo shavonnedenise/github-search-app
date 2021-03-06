@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
 
 import RepoDetail from '../components/RepoDetail';
 
@@ -32,20 +34,24 @@ const RepoDetailsPage = ({ match }) => {
 
      return (
           <>
-               <Paper elevation={3} square>
+               <Grid className="details-page-container">
+               <Button>
                <Link to={`/`}>Go back to search repositories</Link>
+               </Button>
+               <Paper elevation={3} square className="details-page-card">
                {loading && (
                     <div style={{ color: `green` }}>
-                         loading repo detail for repo ID: <strong>{repoId}</strong>
+                         <p>Please Hold! Loading details for repo ID: </p><strong>{repoId}</strong>
                     </div>
                )}
                {error && (
                     <div style={{ color: `red` }}>
-                         some error occurred, while fetching api
+                         <p>Uh oh! An error occurred, while fetching from the API.</p>
                     </div>
                )}
                {repo && <RepoDetail repo={repo} />}
                </Paper>
+               </Grid>
           </>
      );
 };
