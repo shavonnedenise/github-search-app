@@ -1,4 +1,6 @@
 import React from 'react';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 const RepoSearchForm = ({
      onSubmitHandler,
@@ -6,19 +8,21 @@ const RepoSearchForm = ({
      onInputChange,
      error,
 }) => {
+
      return (
           <form onSubmit={onSubmitHandler}>
-               <label>
-                    Search for repositories
-               </label>
-               <input
-                    type="search"
-                    placeholder="microservice, restful design, etc.,"
+               <TextField
+                    id="outlined-textarea"
+                    label="Search me for repos"
+                    placeholder="Kitty cats, Java, JS, etc!"
+                    variant="outlined"
+                    size="small"
+                    margin="dense"
                     value={searchTerm}
                     onChange={onInputChange}
                     required
                />
-               <button type="submit">Search</button>
+               <Button type="submit">Search</Button>
                {error && (
                     <div style={{ color: `red` }}>
                          <p>Uh oh! An error occurred while trying to fetch from the API!</p>
