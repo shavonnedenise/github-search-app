@@ -15,21 +15,18 @@ const RepoSearchForm = ({
                <Grid container justify="center">
                     <Grid className="d-flex" item>
                          <div className="input-text-field">
-                         <TextField 
-                              id="outlined-textarea"
-                              label="Search me for repos"
-                              placeholder="kitty cats, Java, JS, etc!"
-                              variant="outlined"
-                              value={searchTerm}
-                              onChange={onInputChange}
-                              required 
-                         />
+                              <TextField 
+                                   id="outlined-textarea"
+                                   label="Search me for repos"
+                                   placeholder="kitty cats, Java, JS, etc!"
+                                   variant="outlined"
+                                   value={searchTerm}
+                                   onChange={onInputChange}
+                                   required 
+                              />
                          </div>
  
-                         <Button
-                              type="submit"
-                              aria-label="delete"
-                         >
+                         <Button type="submit" aria-label="delete">
                               Search
                          </Button>
                          {error && (

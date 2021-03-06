@@ -53,5 +53,5 @@ export const SelectColumnFilter = ({
                          </option>
                     ))}
                </CustomInput>
-     )
+          )
 }

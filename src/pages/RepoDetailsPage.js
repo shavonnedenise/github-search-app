@@ -35,22 +35,22 @@ const RepoDetailsPage = ({ match }) => {
      return (
           <>
                <Grid className="details-page-container">
-               <Button>
-               <Link to={`/`}>Go back to search repositories</Link>
-               </Button>
-               <Paper elevation={3} square className="details-page-card">
-               {loading && (
-                    <div style={{ color: `green` }}>
-                         <p>Please Hold! Loading details for repo ID: </p><strong>{repoId}</strong>
-                    </div>
-               )}
-               {error && (
-                    <div style={{ color: `red` }}>
-                         <p>Uh oh! An error occurred, while fetching from the API.</p>
-                    </div>
-               )}
-               {repo && <RepoDetail repo={repo} />}
-               </Paper>
+                    <Button>
+                    <Link to={`/`}>Go back to search repositories</Link>
+                    </Button>
+                    <Paper elevation={3} square className="details-page-card">
+                         {loading && (
+                              <div style={{ color: `green` }}>
+                                   <p>Please Hold! Loading details for repo ID: </p><strong>{repoId}</strong>
+                              </div>
+                         )}
+                         {error && (
+                              <div style={{ color: `red` }}>
+                                   <p>Uh oh! An error occurred, while fetching from the API.</p>
+                              </div>
+                         )}
+                         {repo && <RepoDetail repo={repo} />}
+                    </Paper>
                </Grid>
           </>
      );
