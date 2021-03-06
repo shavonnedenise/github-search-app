@@ -44,7 +44,6 @@ const RepoStorage = ({ repos }) => {
      return (
           <>
                <RepoTable columns={columns} data={data} />
-               <p>hello from RepoStorage</p>
           </>
      );
 };

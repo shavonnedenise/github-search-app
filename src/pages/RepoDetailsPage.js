@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import Paper from '@material-ui/core/Paper';
 
 import RepoDetail from '../components/RepoDetail';
 
@@ -31,6 +32,7 @@ const RepoDetailsPage = ({ match }) => {
 
      return (
           <>
+               <Paper elevation={3} square>
                <Link to={`/`}>Go back to search repositories</Link>
                {loading && (
                     <div style={{ color: `green` }}>
@@ -43,6 +45,7 @@ const RepoDetailsPage = ({ match }) => {
                     </div>
                )}
                {repo && <RepoDetail repo={repo} />}
+               </Paper>
           </>
      );
 };

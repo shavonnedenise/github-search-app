@@ -40,3 +40,7 @@
 .d-flex{
   display: flex
 }
+
+.site-greeter {
+  margin: 50px 10px;
+}
