@@ -1,6 +1,8 @@
 import React from "react"
 import {Input, CustomInput} from 'reactstrap';
 
+//**---- Creating filters for the table filtering functionality ----**//
+
 export const Filter = ({ column }) => {
      return (
           <div style={{ marginTop: 5 }}>

@@ -8,6 +8,8 @@ import TableRow from '@material-ui/core/TableRow';
 
 import {Filter, DefaultColumnFilter} from './Filters';
 
+//**---- Just a regular ole react table that has filtering and sorting functionalities ----**//
+
 const RepoTable = ({ columns, data }) => {
      const {
           getTableProps,
@@ -24,6 +26,7 @@ const RepoTable = ({ columns, data }) => {
           useSortBy
      )
 
+     //--- This is how I am indicating which way the order is ascending/descending ---//
      const generateSortingIndicator = column => {
           return column.isSorted ? (column.isSortedDesc ? " ▼" : " ▲") : ""
      }

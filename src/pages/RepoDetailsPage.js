@@ -7,6 +7,8 @@ import Button from '@material-ui/core/Button';
 
 import RepoDetail from '../components/RepoDetail';
 
+//**---- This webpage is where I am displaying the details about the repository that is desired, by making an API call with the repo ID and displaying the details ----**//
+
 const RepoDetailsPage = ({ match }) => {
      const {
           params: { repoId },
@@ -18,17 +20,20 @@ const RepoDetailsPage = ({ match }) => {
      useEffect(() => {
           const API_BASE_URL = `https://api.github.com/repositories`;
           const fetchRepo = async () => {
+               // set loading before API operation starts
+               // and error to false
                setLoading(true);
                setError(false);
                try {
                     const result = await axios.get(`${API_BASE_URL}/${repoId}`);
                     setRepo(result.data);
                } catch (error) {
+                    // if an error is caught, then lets set this error state to true
                     setError(true);
                }
-                    setLoading(false);
+               // after API operation ends, setting loading back to false
+               setLoading(false);
           };
-          // Call the API
           fetchRepo();
      }, [repoId]);
 
@@ -36,7 +41,7 @@ const RepoDetailsPage = ({ match }) => {
           <>
                <Grid className="details-page-container">
                     <Button>
-                    <Link to={`/`}>Go back to search repositories</Link>
+                         <Link to={`/`}>Go back to search repositories</Link>
                     </Button>
                     <Paper elevation={3} square className="details-page-card">
                          {loading && (

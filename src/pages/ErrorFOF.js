@@ -5,6 +5,8 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+//**---- A basic 404 Error page with a little bit of Shavonne energy :3 ----**//
+
 const ErrorFOF = () => {
      return (
           <>

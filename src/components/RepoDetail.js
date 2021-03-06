@@ -1,6 +1,8 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 
+//**---- This component is creating the actual details for the details page ----**//
+
 const RepoDetail = ({ repo }) => {
      return (
           <section>
