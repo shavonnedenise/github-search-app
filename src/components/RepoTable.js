@@ -31,10 +31,11 @@ const RepoTable = ({ columns, data }) => {
      return (
           <Table {...getTableProps()}>
                <colgroup>
-                    <col style={{width:'25%'}}/>
-                    <col style={{width:'25%'}}/>
-                    <col style={{width:'25%'}}/>
-                    <col style={{width:'25%'}}/>
+                    <col style={{width:'20%'}}/>
+                    <col style={{width:'20%'}}/>
+                    <col style={{width:'20%'}}/>
+                    <col style={{width:'20%'}}/>
+                    <col style={{width:'20%'}}/>
                </colgroup>
                <TableHead>
                     {headerGroups.map(headerGroup => (

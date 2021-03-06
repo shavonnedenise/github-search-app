@@ -13,16 +13,19 @@ const RepoDetail = ({ repo }) => {
                          </Typography>
                          <Typography>
                          <h5 className="detail-card-text">
-                              <strong>Owner Login Name:</strong> {repo.owner.login}
+                              <strong>Owner:</strong> {repo.owner.login}
                          </h5>
                          <h5 className="detail-card-text">
-                              <strong>Repo Description:</strong> {repo.description}
-                         </h5>
-                         <h5 className="detail-card-text">
-                              <strong>Stargazers Count:</strong> {repo.stargazers_count}
+                              <strong>Description:</strong> {repo.description}
                          </h5>
                          <h5 className="detail-card-text">
                               <strong>Language:</strong> {repo.language}
+                         </h5>
+                         <h5 className="detail-card-text">
+                              <strong>Stargazers:</strong> {repo.stargazers_count}
+                         </h5>
+                         <h5 className="detail-card-text">
+                              <strong>Forks:</strong> {repo.forks}
                          </h5>
                          </Typography>
                     </div>

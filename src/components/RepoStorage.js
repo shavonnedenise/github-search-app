@@ -30,10 +30,16 @@ const RepoStorage = ({ repos }) => {
                     accessor: "description",
                     Filter: SelectColumnFilter,
                     filter: 'equals'
-                    },
+               },
                {
                     Header: "Language",
                     accessor: "language",
+                    Filter: SelectColumnFilter,
+                    filter: 'equals'
+               },
+               {
+                    Header: "Stargazers",
+                    accessor: "stargazers_count",
                     Filter: SelectColumnFilter,
                     filter: 'equals'
                }
