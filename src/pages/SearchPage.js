@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import axios from 'axios';
+import Grid from '@material-ui/core/Grid';
 
 import RepoSearchForm from '../components/RepoSearchForm';
 import Loader from '../components/Loader';
@@ -42,21 +43,21 @@ const SearchPage = () => {
 
 	return (
 		<>
-			<div>
-				Hi Welcome!
-			</div>
-			<RepoSearchForm
-				onSubmitHandler={onSubmitHandler}
-				onInputChange={onInputChange}
-				searchTerm={searchTerm}
-				error={error}
-			/>
-			<Loader
-				loading={loading}
-				searchTerm={searchTerm}
-			/>
-			<RepoStorage repos={repos} />
-			<p>hi</p>
+                    <div>
+                         Hi Welcome!
+                    </div>
+                    <RepoSearchForm
+                         onSubmitHandler={onSubmitHandler}
+                         onInputChange={onInputChange}
+                         searchTerm={searchTerm}
+                         error={error}
+                    />
+                    <Loader
+                         loading={loading}
+                         searchTerm={searchTerm}
+                    />
+                    <RepoStorage repos={repos} />
+                    <p>hi</p>
 		</>
 	);
 };
