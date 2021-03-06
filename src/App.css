@@ -42,7 +42,11 @@
 }
 
 .site-greeter {
-  margin: 50px 10px;
+  margin: 60px 10px 80px 10px;
+}
+
+.input-text-field {
+  margin-right: 5px;
 }
 
 .details-page-container, .error-page-container {

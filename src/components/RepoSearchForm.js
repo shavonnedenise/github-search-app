@@ -14,16 +14,18 @@ const RepoSearchForm = ({
           <form onSubmit={onSubmitHandler}>
                <Grid container justify="center">
                     <Grid className="d-flex" item>
+                         <div className="input-text-field">
                          <TextField 
                               id="outlined-textarea"
                               label="Search me for repos"
                               placeholder="kitty cats, Java, JS, etc!"
                               variant="outlined"
-                              margin="dense"
                               value={searchTerm}
                               onChange={onInputChange}
                               required 
                          />
+                         </div>
+ 
                          <Button
                               type="submit"
                               aria-label="delete"
