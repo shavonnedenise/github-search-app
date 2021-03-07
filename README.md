@@ -26,8 +26,12 @@ As of right now, there aren't any tests but once added, you can use this script 
 
 As an eager individual, there are a few functionalities I would love to add to this application, here is what I'm thinking so far!
 
-### ⭐️ Back button using useHistory() from react-router
+### ⭐️  Back button using useHistory() from react-router
 
-### ⭐️ Checking for empty strings and not displaying them in the filter dropdown
+### ⭐️  Checking for empty strings and not displaying them in the filter dropdown
 
-### ⭐️ Redesign SearchPage
+### ⭐️  Redesign SearchPage
+
+### ⭐️  Include pagination for the Table
+
+### ⭐️  Redevelop filtering and sorting functionality
