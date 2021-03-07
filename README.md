@@ -24,7 +24,7 @@ As of right now, there aren't any tests but once added, you can use this script 
 
 ## Current Backlog for this Application ✍🏾
 
-As an eager individual, there are a few functionalities I would love to add to this application, here is what I'm thinking so far!
+As an eager individual, there are a few functionalities I would love to add to this application - here is what I'm thinking so far!
 
 ### ⭐️  Back button using useHistory() from react-router
 
@@ -36,7 +36,7 @@ Right now, when the API returns the GitHub data, if a GitHub repository doesn't 
 
 ### ⭐️  Redesign Search Page
 
-I'm not 100% sold on the current Search Page and I had really big ideas on including some more color, some more >pop<
+I'm not 100% sold on the current Search Page and I had really big ideas that included adding some more color, some more style, some more ✨pop✨
 
 ### ⭐️  Include pagination for the Table
 
@@ -46,6 +46,6 @@ The Table should allow the user to add more data to the Table than what is recei
 
 I'm not super into the filter dropdown or having to click the Column Header to sort - the sorting functionality especially isn't intuitive. So I would like to add like a checkbox based filtering function and a button for sorting function (like one would use while shopping!)
 
-### ⭐️  Add scrolling functionality to Search Page
+### ⭐️  Add cool automatic scrolling functionality to Search Page
 
-It would be cool to have the viewport on just the input field as its initial view, and then as soon as input has been received, drop down to the populated table.
+It would be cool to have the viewport on just the input field as its initial view when hitting the web page, and then as soon as input has been received, drop down to the populated table - rather than manually scrolling.
