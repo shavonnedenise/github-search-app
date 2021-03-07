@@ -44,8 +44,8 @@ The Table should allow the user to add more data than what is received during th
 
 ### ⭐️  Redevelop filtering and sorting functionality on Table
 
-I would like to add a checkbox based filtering function and a button based sorting function to the application (like one would use while shopping!)
+I would like to add a checkbox based filtering function and a button based sorting function to the application (like one would use while online shopping!)
 
 ### ⭐️  Add cool automatic scrolling functionality to Search Page
 
-It would be cool to have the viewport on the input field for its initial view. Then, as soon as input has been received, the web page drops down to the populated table - rather than having the user manually scroll.
+It would be cool to have the viewport on the input field for its initial rendering. Then, as soon as input has been received, the web page drops down to the populated table - rather than having the user manually scroll.
