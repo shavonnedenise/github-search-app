@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import axios from 'axios';
+import Grid from '@material-ui/core/Grid';
 
 import RepoSearchForm from '../components/RepoSearchForm';
 import Loader from '../components/Loader';
@@ -46,6 +47,7 @@ const SearchPage = () => {
 
 	return (
 		<>
+          <Grid className="search-page-container">
                <div>
                     <SiteGreeter />
                </div>
@@ -60,6 +62,7 @@ const SearchPage = () => {
                     searchTerm={searchTerm}
                />
                <RepoStorage repos={repos} />
+               </Grid>
 		</>
 	);
 };

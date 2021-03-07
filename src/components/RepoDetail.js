@@ -8,25 +8,35 @@ const RepoDetail = ({ repo }) => {
           <section>
                <div>
                     <div>
-                         <Typography>
-                              <h1 className="detail-card-text">
-                                   <strong>Title:</strong> {repo.name}
-                              </h1>
-                              <h5 className="detail-card-text">
+                         <Typography variant="h3">
+                              <div className="detail-card-text">
+                                   <strong>Name:</strong> {repo.name}
+                              </div>
+                         </Typography>
+                         <Typography variant="h5">
+                              <div className="detail-card-text">
                                    <strong>Owner:</strong> {repo.owner.login}
-                              </h5>
-                              <h5 className="detail-card-text">
+                              </div>
+                         </Typography>
+                         <Typography variant="h5">
+                              <div className="detail-card-text">
                                    <strong>Description:</strong> {repo.description}
-                              </h5>
-                              <h5 className="detail-card-text">
+                              </div>
+                         </Typography>
+                         <Typography variant="h5">
+                              <div className="detail-card-text">
                                    <strong>Language:</strong> {repo.language}
-                              </h5>
-                              <h5 className="detail-card-text">
+                              </div>
+                         </Typography>
+                         <Typography variant="h5">
+                              <div className="detail-card-text">
                                    <strong>Stargazers:</strong> {repo.stargazers_count}
-                              </h5>
-                              <h5 className="detail-card-text">
+                              </div>
+                         </Typography>
+                         <Typography variant="h5">
+                              <div className="detail-card-text">
                                    <strong>Forks:</strong> {repo.forks}
-                              </h5>
+                              </div>
                          </Typography>
                     </div>
                </div>

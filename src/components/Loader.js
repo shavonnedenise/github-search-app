@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 const Loader = ({ loading, searchTerm }) => {
      return (
           <>  
-               <Typography align="center">
+               <Typography align="center" variant="h5">
                     {loading && (
                          <div className="loading-text">
                               Howdy partner! Please wait while we fetch those repos with "<strong>{searchTerm}</strong>"

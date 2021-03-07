@@ -15,19 +15,25 @@ const ErrorFOF = () => {
                          <Link to={`/`}>Go back to search repositories</Link>
                     </Button>
                     <Paper elevation={3} square className="details-page-card">
-                         <Typography align="center">
-                              <h1 className="error-card-text">
+                         <Typography variant="h2" align="center">
+                              <div className="error-card-text">
                                    Error 404
-                              </h1>
-                              <h4 className="error-card-text">
+                              </div>
+                         </Typography>
+                         <Typography variant="h5" align="center">
+                              <div className="error-card-text">
                                    Uh oh friend - you've reached a page that doesn't exist.
-                              </h4>
-                              <h4 className="error-card-text">
+                              </div>
+                         </Typography>
+                         <Typography variant="h5" align="center">
+                              <div className="error-card-text">
                                    How about we head back to the <Link to={`/`}>search page</Link> and search for some kitty cats!
-                              </h4>
-                              <p>
+                              </div>
+                         </Typography>
+                         <Typography variant="overline" align="center">
+                              <div>
                                    Meow &hearts;
-                              </p>
+                              </div>
                          </Typography>
                     </Paper>
                </Grid>

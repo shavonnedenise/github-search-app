@@ -7,10 +7,10 @@ import Typography from '@material-ui/core/Typography';
 const SiteGreeter = () => {
      return (
           <Grid container justify="center" s={12}>
-               <Typography align="center">
-                    <h1 className="site-greeter">
+               <Typography align="center" variant="h2">
+                    <div className="site-greeter">
                          The GitHub Repository Search App
-                    </h1>
+                    </div>
                </Typography>
           </Grid>
      );

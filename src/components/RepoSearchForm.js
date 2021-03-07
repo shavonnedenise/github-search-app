@@ -13,7 +13,7 @@ const RepoSearchForm = ({
 }) => {
 
      return (
-          <form onSubmit={onSubmitHandler}>
+          <form onSubmit={onSubmitHandler} className="search-form">
                <Grid container justify="center">
                     <Grid className="d-flex" item>
                          <div className="input-text-field">
