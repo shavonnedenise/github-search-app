@@ -4,7 +4,9 @@ Fun fact, this project was bootstrapped with [Create React App](https://github.c
 
 ## Available Scripts
 
-In the project directory, you can run:
+### `npm install`
+
+Just to make sure you have all the things necessary for this application, let's go ahead and do an install!
 
 ### `npm start`
 
