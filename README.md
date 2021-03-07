@@ -28,7 +28,7 @@ As an eager individual, there are a few functionalities I would love to add to t
 
 ### ⭐️  Back button using useHistory() from react-router
 
-Currently, when a user hits their back button, the application would refresh and previous data is gone. It would be cool to have an app back button - especially on the Details Page!
+Currently, when a user hits their back button, the application refreshes. It would be cool to have an app back button - especially on the Details Page!
 
 ### ⭐️  Checking for empty strings and not displaying them in the filter dropdown
 
@@ -36,16 +36,16 @@ Right now, when the API returns the GitHub data, if a GitHub repository doesn't 
 
 ### ⭐️  Redesign Search Page
 
-I'm not 100% sold on the current Search Page and I had really big ideas that included adding some more color, some more style, some more ✨pop✨
+I would love to redesign the Search Page which would include adding more color, more style, more ✨pop✨
 
 ### ⭐️  Include pagination for the Table
 
-The Table should allow the user to add more data to the Table than what is received during the first API fetch. 
+The Table should allow the user to add more data than what is received during the first API fetch. 
 
 ### ⭐️  Redevelop filtering and sorting functionality on Table
 
-I'm not super into the filter dropdown or having to click the Column Header to sort - the sorting functionality especially isn't intuitive. So I would like to add like a checkbox based filtering function and a button for sorting function (like one would use while shopping!)
+I would like to add a checkbox based filtering function and a button based sorting function to the application (like one would use while shopping!)
 
 ### ⭐️  Add cool automatic scrolling functionality to Search Page
 
-It would be cool to have the viewport on just the input field as its initial view when hitting the web page, and then as soon as input has been received, drop down to the populated table - rather than manually scrolling.
+It would be cool to have the viewport on just the input field for its initial view. Then, as soon as input has been received, drop down to the populated table - rather than manually scrolling.
