@@ -1,6 +1,6 @@
 # Hi! Welcome to the GitHub Repository Search App! 👋🏾
 
-With this application, you can search the GitHub repository API and it will be placed in a table for viewing.
+With this application, you can search the GitHub repository API and the retrieved data will be placed in a table for viewing.
 Once populated, you can click on the Column Header to sort the data. You can also select an item from the dropdown to filter data as well!
 Within the table, you can click on the Repository ID and you will be directed to the Details page to view additional information regarding the Repository.
 Once you go back to the Search Page, you can enter a new search value!
