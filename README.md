@@ -19,8 +19,8 @@ Let's run this bad boy! Open [http://localhost:3000](http://localhost:3000) to v
 
 ### `npm test`
 
-This script will launch the test runner in the interactive watch mode.\
-As of right now, there aren't any tests but once added, you can use this script to run them.
+This script will launch the test runner in the interactive watch mode.
+Currently there aren't any tests, but once added, you can use this script to run them!
 
 ## Current Backlog for this Application ✍🏾
 
@@ -32,7 +32,7 @@ Currently, when a user hits their back button, the application refreshes. It wou
 
 ### ⭐️  Checking for empty strings and not displaying them in the filter dropdown
 
-Right now, when the API returns the GitHub data, if a GitHub repository doesn't have a description filled out, then the filter still picks up on the empty string when it should be ignored.
+Right now, when the API returns the data, if a GitHub repository doesn't have a description, then the filter picks up on the empty string when it should be ignored.
 
 ### ⭐️  Redesign Search Page
 
@@ -48,4 +48,4 @@ I would like to add a checkbox based filtering function and a button based sorti
 
 ### ⭐️  Add cool automatic scrolling functionality to Search Page
 
-It would be cool to have the viewport on just the input field for its initial view. Then, as soon as input has been received, drop down to the populated table - rather than manually scrolling.
+It would be cool to have the viewport on the input field for its initial view. Then, as soon as input has been received, the web page drops down to the populated table - rather than having the user manually scroll.
